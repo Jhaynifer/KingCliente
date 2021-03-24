@@ -1,0 +1,296 @@
+.card-principal-compra {
+    margin: 75px 10px; 
+    border-radius: 10px;
+}
+
+.title-compra {
+    display: flex;
+    align-self: center;
+}
+.title-compra span {
+    font-size: 60px;
+    align-self: center;
+}
+.title-compra h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    align-self: center;
+    font-weight: 500;
+    font-family: system-ui;
+}
+.img-pagamento {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.cards-pag {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.div-imagens {
+    background-color: #eeeeee75; 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 6px #ccc;
+    text-align: center; 
+    align-self: center; 
+    padding: 10px;
+    width: 100%;
+}
+.img-cartao {
+    width: 40%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.img-boleto {
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.img-paypal {
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+}
+.form-pagamento {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    text-align: center; 
+    justify-content: space-evenly;
+}
+.div-credito input {
+    width: 200px;
+    border-radius: 5px;
+    border-color: #ccc;
+    margin-left: 10px;
+    height: 40px;
+}
+.div-credito {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.title-forma h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    font-family: system-ui;
+}
+.title-forma h4 {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.title-valor span {
+    font-size: 35px;
+    font-weight: 500;
+    padding: 10px;
+    font-family: system-ui;
+}
+.title-valor {
+    margin: 15px;
+}
+.title-valor h4 {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.numeral {
+    font-size: 18px;
+    border: 4px solid #0e0e1d;
+    border-radius: 50px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #0e0e1d;
+}
+.title-dados {
+    align-self: center;
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: system-ui;
+    font-weight: 500;
+    color: #0e0e1d;
+    text-align: left;
+}
+.numero-dados {
+    display: flex;
+    margin: 30px 0;
+}
+
+@media (max-width: 1320px) {
+    .img-cartao {
+        width: 50%;
+    }
+    .img-boleto {
+        width: 75%;
+    }
+    .img-paypal {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1099px) {
+    .img-cartao {
+        width: 60%;
+    }
+    .img-boleto {
+        width: 90%;
+    }
+    .img-paypal {
+        width: 80%;
+    }
+}
+
+@media (max-width: 991px) {
+    .img-cartao {
+        width: 50%;
+    }
+    .img-boleto {
+        width: 75%;
+    }
+    .img-paypal {
+        width: 65%;
+    }
+}
+
+@media (max-width: 900px) {
+    .title-dados {
+        font-size: 20px;
+    }
+    .numeral {
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 830px) {
+    .img-cartao {
+        width: 60%;
+    }
+    .img-boleto {
+        width: 85%;
+    }
+    .img-paypal {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 720px) {
+    /* .img-pagamento {
+        height: 85px;
+    } */
+    .img-cartao {
+        width: 100px;
+    }
+    .img-boleto {
+        width: 125px;
+    }
+    .img-paypal {
+        width: 110px;
+    }
+}
+
+@media (max-width: 645px) {
+    .title-dados {
+        font-size: 17px;
+    }
+    .numeral {
+        padding: 7px;
+        border: 2px solid #0e0e1d;
+    }
+    .title-compra span {
+        font-size: 45px;
+    }
+    .title-compra h1 {
+        font-size: 30px;
+    }
+    .title-valor span {
+        font-size: 30px;
+    }
+    .title-valor h4 {
+        font-size: 16px;
+    }
+    .title-forma h4 {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .img-pagamento {
+        height: 60px;
+    }
+    .div-imagens {
+        width: 85px;
+        height: 85px;
+    }
+    .img-cartao {
+        width: 43px;
+    }
+    .img-boleto {
+        width: 62px;
+    }
+    .img-paypal {
+        width: 62px;
+    }
+}
+
+@media (max-width: 575px) {
+    .form-pagamento {
+        padding: 0;
+    }
+    
+}
+
+@media (max-width: 360px) {
+    .title-valor span {
+        font-size: 24px;
+    }
+    .title-valor h4 {
+        font-size: 14px;
+    }
+    .title-forma h4 {
+        font-size: 14px;
+    }
+    .title-forma h2 {
+        font-size: 24px;
+    }
+    .formulario {
+        padding: 0;
+    }
+    .cartao-pagamento {
+        padding: 0;
+    }
+}
+
+@media (max-width: 340px) {
+    .div-imagens {
+        width: 70px;
+        height: 70px;
+    }
+    .img-cartao {
+        width: 33px;
+    }
+    .img-boleto {
+        width: 52px;
+    }
+    .img-paypal {
+        width: 52px;
+    }
+
+}

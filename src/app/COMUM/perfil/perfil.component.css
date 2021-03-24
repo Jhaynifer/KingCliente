@@ -1,0 +1,168 @@
+input[type="file"] {
+    display: none;
+}
+
+.card-perfil {
+    background-color: #fff; 
+    border-radius: 15px; 
+    margin: 75px 10px;
+}
+.card-title {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card-title h1 {
+    padding-left: 10px;
+    align-self: center;
+    margin-bottom: 0;
+    font-family: system-ui;
+    font-weight: 500;
+    font-size: 35px;
+}
+.icon-perfil {
+    font-size: 45px;
+    border: 3px solid #0e0e1d;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+}
+.title-perfil {
+    display: flex;
+    text-align: left;
+    padding: 0;
+}
+.div-foto {
+    text-align: left;
+    margin: 10px;
+}
+.img-perfil {
+    width: 10%;
+}
+.div-forms-perfil {
+    display: flex; 
+    padding: 0;
+}
+.div-form-input {
+    width: 100%;
+    display: block;
+    align-self: center;
+    padding-left: 0;
+}
+.div-form-input input {
+    margin: 0 10px;
+    width: 100%;
+}
+.div-form-input h2 {
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 400;
+}
+.div-form-line {
+    display: flex;
+    margin: 20px auto;
+}
+.form-perfil {
+    margin: 0 10px;
+
+}
+.btns-perfil {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+.btn-limpar {
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 30px;
+    text-align: right;
+    text-transform: uppercase;
+    background-color: #0e0e1d;
+    border-radius: 50px;
+    color: #d8bd6c;
+    border: none;
+    box-shadow: 2px 2px 3px #444;
+}
+.btn-salvar {
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px 30px;
+    text-align: right;
+    text-transform: uppercase;
+    background-color: #0e0e1d;
+    border-radius: 50px;
+    color: #d8bd6c;
+    border: none;
+    box-shadow: 2px 2px 3px #444;
+}
+.line-responsive {
+    display: flex;
+    padding: 0;
+}
+.div-senha {
+    display: flex; 
+    margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .img-perfil {
+        width: 15%;
+    }
+}
+
+@media (max-width: 990px) {
+    .div-forms-perfil {
+        display: block; 
+        padding: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .img-perfil {
+        width: 20%;
+    }
+}
+
+@media (max-width: 767px) {
+    .line-responsive {
+        display: block;
+    }
+    .img-perfil {
+        width: 35%;
+    }
+    .div-foto {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .div-senha {
+        display: block; 
+        padding: 0;
+    }
+    .div-form-input h2 {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .img-perfil {
+        width: 50%;
+    }
+}
+
+@media (max-width: 365px) {
+    .btns-perfil {
+        justify-content: center;
+    }
+    .btn-salvar {
+        padding: 10px 20px;
+    }
+    .btn-limpar {
+        padding: 10px 20px;
+    }
+    .div-form-input {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,219 @@
+.div-fundo {
+    display: flex; 
+    height: 100%; 
+    width: 100%; 
+    background-color: #0e0e1d;
+    margin: 0 auto;
+    padding: 0;
+}
+.div-img {
+    background-color: #0e0e1d; 
+    width: 100%;
+    align-self: center;
+    vertical-align: middle;
+    height: 60%;
+}
+.div-login {
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #0e0e1d;
+}
+.card-login {
+    width: 70%; 
+    text-align: center; 
+    align-self: center; 
+    box-shadow: none;
+    background-color: #0e0e1d;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.div-info-logo {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    align-self: center;
+}
+.logo-login {
+    margin: 0 auto;
+}
+.div-info-logo h3 {
+    color: #fff;
+    font-size: 26px;
+    line-height: 1.5;
+    letter-spacing: 2;
+    padding: 15px;
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+}
+.div-sociais {
+    width: 100%;
+    margin: 0 auto;
+}
+.siga-nos {
+    text-align: center; 
+    margin-top: 40px;
+}
+.siga-nos h3 {
+    color: #fff; 
+    font-size: 22px; 
+    font-weight: 300;
+}
+.img-sociais {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+}
+.img-sociais img {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+.footer-login {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.footer-login h3 {
+    line-height: 5;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 30px;
+}
+.div-forms {
+    width: 70%; 
+    text-align: center; 
+    margin: 0 auto;
+}
+.text-login {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-entrar {
+    padding: 10px; 
+    margin-bottom: 20px !important; 
+    font-size: 16px; 
+    border-radius: 10px; 
+    border: none; 
+    color:#0e0e1d; 
+    background:#cca658; 
+    display: block; 
+    margin: 0 auto;
+    width: 74%;
+    box-shadow: 2px 2px 3px #090912;
+}
+.btn-esqueci a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #fff;
+}
+.div-cadastrar {
+    display: flex; 
+    justify-content: space-between; 
+    width: 99%; 
+    margin: 0 auto; 
+    margin-top: 45px;
+}
+.mobile-login {
+    display: none;
+}
+.div-form-login {
+    width: 60%; 
+    text-align: center; 
+    margin: 0 auto;
+}
+
+@media (max-width: 1080px) {
+    .card-login {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 890px) {
+    .div-img {
+        display: none;
+    }
+    .mobile-login {
+        display: block;
+        height: 100%; 
+        background-color: #0e0e1d;
+        padding: 0;
+    }
+    .div-login {
+        display: none;
+    }
+    .logo-login {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        width: 30%;
+    }
+    .card-login {
+        background-color: #0e0e1d;
+        padding: 0;
+        border: none;
+        margin: 0;
+        width: 100%;
+    }
+    .text-login {
+        font-size: 26px;
+    }
+    .btn-entrar {
+        color: #0e0e1d;
+        background: #eed880;
+        width: 63%;
+    }
+    .siga-nos h3 {
+        color: #fff;
+        font-size: 20px;
+    }
+    .footer-login {
+        color: #fff;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .text-login {
+        color: #fff;
+    }
+    .btn-esqueci a {
+        color: #fff;
+    }
+    .footer-login {
+        background-color: #0e0e1d;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-login {
+        width: 50%;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer-login h3 {
+        font-size: 16px;
+    }
+    .text-login {
+        font-size: 22px;
+    }
+    .card-login {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer-login h3 {
+        font-size: 14px;
+    }
+    .siga-nos h3 {
+        font-size: 18px;
+    }
+    .div-form-login {
+        width: 80%;
+    }
+}

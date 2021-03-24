@@ -1,0 +1,488 @@
+<div class="fundo-pedidos">
+    <mat-card class="mat-elevation-z4 card-pedidos" style="margin: 76px 10px;
+    border-radius: 10px;">
+        <mat-card-title class="text-left card-title">
+            <div class="col-md-9 title-pedidos">
+                <span class="material-icons icon-pedido">
+                    shopping_cart
+                </span>
+                <h1>Pedidos</h1>
+            </div>
+            <div class="add-pedido-mobile col-md-6">
+                <button routerLink="/produtos" class="btn-add-pedido"><span class="material-icons icone-add">
+                        add</span><span class="title-add">Adicionar Pedido</span></button>
+            </div>
+        </mat-card-title>
+
+        <div class="div-buscar">
+            <form class="col-md-6 navbar-form navbar-left" role="search" style="display: flex;">
+                <div class="buscar-pedidos " style="display: flex; justify-content: space-between;">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Buscar">
+                    </div>
+                    <button type="submit" class="btn-buscar">
+                        <span class="material-icons">search</span>
+                    </button>
+                </div>
+            </form>
+            <div class="add-pedido col-md-6">
+                <button routerLink="/produtos" class="btn-add-pedido"><span class="material-icons icone-add">
+                        add</span><span class="title-add">Adicionar Pedido</span></button>
+            </div>
+
+
+        </div>
+
+        <div class="lista-pedidos" style="overflow-y: auto;">
+            <mat-card class="mat-elevation-z4 div-pedidos-list">
+                <div class="col-md titles" style="margin: 10px;">
+                    <h1>Número do Pedido</h1>
+                    <h3>00129</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Cliente</h1>
+                    <h3>Juliana Master Teste</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Data do Pedido</h1>
+                    <h3>29/01/2021</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Valor</h1>
+                    <h3>R$ 1.520,00</h3>
+                </div>
+
+                <div class="col-md div-botoes-acao" style="display: flex; margin: 10px 30px; margin-right: 0;">
+                    <div class="div-btns-pedidos">
+                        <button (click)="PedidoDetalhes(detalhes)" class="btn-pedidos"><span class="material-icons">
+                                description</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button class="btn-pedidos"><span class="material-icons">
+                                edit</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button (click)="open(content)" class="btn-pedidos"><span class="material-icons">
+                                delete</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button routerLink="/finalizar-compra" class="btn-pedidos"><span class="material-icons">
+                                done</span></button>
+                    </div>
+                </div>
+            </mat-card>
+
+            <mat-card class="mat-elevation-z4 div-pedidos-list">
+                <div class="col-md titles" style="margin: 10px;">
+                    <h1>Número do Pedido</h1>
+                    <h3>00129</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Cliente</h1>
+                    <h3>Juliana Master Teste</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Data do Pedido</h1>
+                    <h3>29/01/2021</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Valor</h1>
+                    <h3>R$ 1.520,00</h3>
+                </div>
+
+                <div class="col-md div-botoes-acao" style="display: flex; margin: 10px 30px; margin-right: 0;">
+                    <div class="div-btns-pedidos">
+                        <button (click)="PedidoDetalhes(detalhes)" class="btn-pedidos"><span class="material-icons">
+                                description</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button class="btn-pedidos"><span class="material-icons">
+                                edit</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button (click)="open(content)" class="btn-pedidos"><span class="material-icons">
+                                delete</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button routerLink="/finalizar-compra" class="btn-pedidos"><span class="material-icons">
+                                done</span></button>
+                    </div>
+                </div>
+            </mat-card>
+
+            <mat-card class="mat-elevation-z4 div-pedidos-list">
+                <div class="col-md titles" style="margin: 10px;">
+                    <h1>Número do Pedido</h1>
+                    <h3>00129</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Cliente</h1>
+                    <h3>Juliana Master Teste</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Data do Pedido</h1>
+                    <h3>29/01/2021</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Valor</h1>
+                    <h3>R$ 1.520,00</h3>
+                </div>
+
+                <div class="col-md div-botoes-acao" style="display: flex; margin: 10px 30px; margin-right: 0;">
+                    <div class="div-btns-pedidos">
+                        <button (click)="PedidoDetalhes(detalhes)" class="btn-pedidos"><span class="material-icons">
+                                description</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button class="btn-pedidos"><span class="material-icons">
+                                edit</span>r</button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button (click)="open(content)" class="btn-pedidos"><span class="material-icons">
+                                delete</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button routerLink="/finalizar-compra" class="btn-pedidos"><span class="material-icons">
+                                done</span></button>
+                    </div>
+                </div>
+            </mat-card>
+
+            <mat-card class="mat-elevation-z4 div-pedidos-list">
+                <div class="col-md titles" style="margin: 10px;">
+                    <h1>Número do Pedido</h1>
+                    <h3>00129</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Cliente</h1>
+                    <h3>Juliana Master Teste</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Data do Pedido</h1>
+                    <h3>29/01/2021</h3>
+                </div>
+
+                <div class="col-md titles" style="margin: 10px 30px;">
+                    <h1>Valor</h1>
+                    <h3>R$ 1.520,00</h3>
+                </div>
+
+                <div class="col-md div-botoes-acao" style="display: flex; margin: 10px 30px; margin-right: 0;">
+                    <div class="div-btns-pedidos">
+                        <button (click)="PedidoDetalhes(detalhes)" class="btn-pedidos"><span class="material-icons">
+                                description</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button class="btn-pedidos"><span class="material-icons">
+                                edit</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button (click)="open(content)" class="btn-pedidos"><span class="material-icons">
+                                delete</span></button>
+                    </div>
+                    <div class="div-btns-pedidos">
+                        <button routerLink="/finalizar-compra" class="btn-pedidos"><span class="material-icons">
+                                done</span></button>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+
+        <!-- CARD MOBILE-->
+
+        <div class="card-mobile-pedidos">
+            <mat-card class="card-mobile">
+                <mat-card-title class="card-title-mobile">
+                    <div class="icon-mobile-pedido">
+                        <span class="material-icons">
+                            shopping_cart
+                        </span>
+                        <h1>Pedido</h1>
+                    </div>
+
+                    <div class="numero-pedido">
+                        <h2>0265</h2>
+                    </div>
+                </mat-card-title>
+
+                <div class="div-info-mobile">
+                    <div>
+                        <div class="text-info-mobile">
+                            <h1>Cliente: Ana Julia Martins</h1>
+                        </div>
+                        <div class="text-info-mobile">
+                            <h2>Data do pedido: 25/02/2021</h2>
+                            <h2>Valor: R$ 800,00</h2>
+                        </div>
+                    </div>
+                    <div class="btns-mobile">
+                        <div class="div-btns-pedidos">
+                            <button (click)="PedidoDetalhes(detalhes)" class="btn-pedidos"><span class="material-icons">
+                                    description</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button class="btn-pedidos"><span class="material-icons">
+                                    edit</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button (click)="open(content)" class="btn-pedidos"><span class="material-icons">
+                                    delete</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button routerLink="/finalizar-compra" class="btn-pedidos"><span class="material-icons">
+                                    done</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </mat-card>
+            <mat-card class="card-mobile">
+                <mat-card-title class="card-title-mobile">
+                    <div class="icon-mobile-pedido">
+                        <span class="material-icons">
+                            shopping_cart
+                        </span>
+                        <h1>Pedido</h1>
+                    </div>
+
+                    <div class="numero-pedido">
+                        <h2>0265</h2>
+                    </div>
+                </mat-card-title>
+
+                <div class="div-info-mobile">
+                    <div>
+                        <div class="text-info-mobile">
+                            <h1>Cliente: Ana Julia Martins</h1>
+                        </div>
+                        <div class="text-info-mobile">
+                            <h2>Data do pedido: 25/02/2021</h2>
+                            <h2>Valor: R$ 800,00</h2>
+                        </div>
+                    </div>
+                    <div class="btns-mobile">
+                        <div class="div-btns-pedidos">
+                            <button (click)="PedidoDetalhes(detalhes)" class="btn-pedidos"><span class="material-icons">
+                                    description</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button class="btn-pedidos"><span class="material-icons">
+                                    edit</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button (click)="open(content)" class="btn-pedidos"><span class="material-icons">
+                                    delete</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button routerLink="/finalizar-compra" class="btn-pedidos"><span class="material-icons">
+                                    done</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </mat-card>
+            <mat-card class="card-mobile">
+                <mat-card-title class="card-title-mobile">
+                    <div class="icon-mobile-pedido">
+                        <span class="material-icons">
+                            shopping_cart
+                        </span>
+                        <h1>Pedido</h1>
+                    </div>
+
+                    <div class="numero-pedido">
+                        <h2>0265</h2>
+                    </div>
+                </mat-card-title>
+
+                <div class="div-info-mobile">
+                    <div>
+                        <div class="text-info-mobile">
+                            <h1>Cliente: Ana Julia Martins</h1>
+                        </div>
+                        <div class="text-info-mobile">
+                            <h2>Data do pedido: 25/02/2021</h2>
+                            <h2>Valor: R$ 800,00</h2>
+                        </div>
+                    </div>
+                    <div class="btns-mobile">
+                        <div class="div-btns-pedidos">
+                            <button (click)="PedidoDetalhes(detalhes)" class="btn-pedidos"><span class="material-icons">
+                                    description</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button class="btn-pedidos"><span class="material-icons">
+                                    edit</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button (click)="open(content)" class="btn-pedidos"><span class="material-icons">
+                                    delete</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button routerLink="/finalizar-compra" class="btn-pedidos"><span class="material-icons">
+                                    done</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </mat-card>
+            <mat-card class="card-mobile">
+                <mat-card-title class="card-title-mobile">
+                    <div class="icon-mobile-pedido">
+                        <span class="material-icons">
+                            shopping_cart
+                        </span>
+                        <h1>Pedido</h1>
+                    </div>
+
+                    <div class="numero-pedido">
+                        <h2>0265</h2>
+                    </div>
+                </mat-card-title>
+
+                <div class="div-info-mobile">
+                    <div>
+                        <div class="text-info-mobile">
+                            <h1>Cliente: Ana Julia Martins</h1>
+                        </div>
+                        <div class="text-info-mobile">
+                            <h2>Data do pedido: 25/02/2021</h2>
+                            <h2>Valor: R$ 800,00</h2>
+                        </div>
+                    </div>
+                    <div class="btns-mobile">
+                        <div class="div-btns-pedidos">
+                            <button (click)="PedidoDetalhes(detalhes)" class="btn-pedidos"><span class="material-icons">
+                                    description</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button class="btn-pedidos"><span class="material-icons">
+                                    edit</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button (click)="open(content)" class="btn-pedidos"><span class="material-icons">
+                                    delete</span></button>
+                        </div>
+                        <div class="div-btns-pedidos">
+                            <button routerLink="/finalizar-compra" class="btn-pedidos"><span class="material-icons">
+                                    done</span></button>
+                        </div>/
+                        
+                    </div>
+                </div>
+
+            </mat-card>
+        </div>
+
+
+    </mat-card>
+
+    <!--MODAL EXCLUIR-->
+
+    <ng-template #content let-c="close" let-d="dismiss">
+
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title" style="margin-bottom: 0;
+            font-size: 24px; font-family: system-ui; font-weight: 500;">Excluir</h4>
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <p style="font-size: 18px; font-family: system-ui;">Tem Certeza que deseja excluir este pedido?</p>
+
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="c('Save click')"
+                style="background-color: #0e0e1d; color: #d8bd6c; font-size: 18px; border: none;">Cancelar</button>
+            <button type="button" class="btn btn-outline-dark" (click)="c('Save click')"
+                style="background-color: #0e0e1d; color: #d8bd6c; font-size: 18px; border: none;">Excluir</button>
+        </div>
+    </ng-template>
+
+    <!--MODAL DETALHES-->
+
+    <ng-template #detalhes let-c="close" let-d="dismiss">
+
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title" style="margin-bottom: 0;
+            font-size: 24px; font-family: system-ui; font-weight: 500;">Detalhes de seu Pedido</h4>
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+
+            <div style="display: flex;">
+                <h2>Número do Pedido:</h2>
+                <h3 style="align-self: center; margin-left: 10px;">00129</h3>
+            </div>
+            <div style="display: flex;">
+                <h2>Data do Pedido:</h2>
+                <h3 style="align-self: center; margin-left: 10px;">25/02/2021</h3>
+            </div>
+            <div style="display: flex;">
+                <h2>Valor:</h2>
+                <h3 style="align-self: center; margin-left: 10px;">R$ 800,00</h3>
+            </div>
+            <div style="display: flex;">
+                <h2>Produtos</h2>
+            </div>
+
+            <div class="tabela" style="overflow-x: auto;">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Tamanho</th>
+                            <th>Cor</th>
+                            <th>Qntd</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td>Camiseta</td>
+                        <td>P</td>
+                        <td>Preto</td>
+                        <td>2</td>
+                        <td>R$ 200,00</td>
+                    </tbody>
+                    <tbody>
+                        <td>Camiseta</td>
+                        <td>P</td>
+                        <td>Preto</td>
+                        <td>2</td>
+                        <td>R$ 200,00</td>
+                    </tbody>
+
+
+
+                </table>
+
+            </div>
+
+
+        </div>
+
+        <div class="modal-footer">           
+            <button type="button" class="btn btn-outline-dark" (click)="c('Save click')"
+                style="background-color: #0e0e1d; color: #d8bd6c; font-size: 18px; border: none;">Fechar</button>
+        </div>
+    </ng-template>
+
+
+</div>

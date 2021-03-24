@@ -1,0 +1,129 @@
+<div class="fundo-compra">
+    <mat-card class="card-principal-compra">
+        <mat-card-title class="title-compra">
+            <span class="material-icons icones-dash">
+                monetization_on
+            </span>
+            <h1>Compra</h1>
+        </mat-card-title>
+
+
+        <div class="card-compra">
+            <div class="div-credito col-md-12">
+                <div class="title-valor">
+                    <span>Valor do Crédito</span>
+                    <h4>Digite o valor do crédito e realize o pagamento</h4>
+                </div>
+                <div class="input-valor">
+                    <input type="text">
+                </div>
+
+            </div>
+
+            <div class="title-forma col-md-12">
+                <h2>Forma de Pagamento</h2>
+                <h4>Escolha a forma de pagamento abaixo</h4>
+            </div>
+
+            <div class="cards-pag">
+                <div class="div-imagens col-lg-2 col-md-3 col-sm-3">
+
+                    <div class="img-pagamento">
+                        <img class="img-cartao" src="assets/img/cartao.png">
+                    </div>
+
+                </div>
+                <div class="div-imagens col-lg-2 col-md-3 col-sm-3">
+
+                    <div class="img-pagamento">
+                        <img class="img-boleto" src="assets/img/boleto.png">
+                    </div>
+
+                </div>
+                <div class="div-imagens col-lg-2 col-md-3 col-sm-3">
+
+                    <div class="img-pagamento">
+                        <img class="img-paypal" src="assets/img/paypal.png">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-12 form-pagamento">
+
+            <div class="col-md-5 col-sm-6 formulario">
+
+                <div class="numero-dados">
+                    <h1 class="numeral">1</h1>
+                    <span class="title-dados">Dados Pessoais</span>
+                </div>
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>Nome Completo</mat-label>
+                    <input class="digitavel" matInput placeholder="Nome Completo">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>CPF</mat-label>
+                    <input class="digitavel" matInput placeholder="CPF">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>Email</mat-label>
+                    <input class="digitavel" matInput placeholder="Email">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>Endereço</mat-label>
+                    <input class="digitavel" matInput placeholder="Endereço">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>CEP</mat-label>
+                    <input class="digitavel" matInput placeholder="CEP">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>Cidade</mat-label>
+                    <input class="digitavel" matInput placeholder="Cidade">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>Estado</mat-label>
+                    <input class="digitavel" matInput placeholder="CPF">
+                </mat-form-field>
+
+            </div>
+
+            <div class="col-md-5 col-sm-6 cartao-pagamento" style="display: block;">
+                <div class="numero-dados">
+                    <h1 class="numeral">2</h1>
+                    <span class="title-dados">Dados Cartão de Crédito</span>
+                </div>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>Número do cartão</mat-label>
+                    <input class="digitavel" matInput placeholder="Número do cartão">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>Data de Vencimento</mat-label>
+                    <input type="date" class="digitavel" matInput placeholder="Data de Vencimento">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" style="display: block;">
+                    <mat-label>Código de Segurança</mat-label>
+                    <input class="digitavel" matInput placeholder="Código de Segurança">
+                </mat-form-field>
+
+            </div>
+        </div>
+
+        <div class="btn-pagamento" style="margin: 30px auto; text-align: center;">
+            <button style="padding: 10px 40px; border-radius: 50px; background-color: #0e0e1d;
+            border-color: #0e0e1d; font-size: 18px; font-weight: 400; color: #fff;">CONFIRMAR</button>
+        </div>
+
+    </mat-card>
+</div>

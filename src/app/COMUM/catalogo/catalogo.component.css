@@ -1,0 +1,261 @@
+.fundo-prod {
+    margin: 75px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.img-bemvindo{
+    padding: 0;
+}
+.img-bemvindo img {
+    width: 200px;
+    align-self: center;
+}
+.card-title {
+    padding: 5px 15px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.produtos-scroll {
+    overflow-y: auto;
+    padding-bottom: 50px;
+    display: block;
+}
+.card-produtos {
+    border-radius: 10px; 
+    background-color: rgb(0 0 0 / 12%);
+}
+.card-produtos img {
+    width: 100%;
+    border-radius: 10px;
+}
+.div-products {
+    display: block;   
+    margin: 10px auto; 
+    width: 100%;
+    height: 100%;
+}
+.title-product h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+    padding: 10px;
+    color: #0e0e1d;
+}
+.div-cor-qtd {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cor {
+    display: flex;    
+}
+.cor h4 {
+    align-self: center;
+    margin-bottom: 0;
+}
+.qtd-produtos h4 {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.qtd-produtos {
+    align-self: center;
+    display: flex;
+}
+.div-valor {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.valor h4 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #0e0e1d;
+    margin-bottom: 0;
+    align-self: center;
+}
+.valor {
+    align-self: center;
+    margin-top: 10px;
+}
+.comprar {
+    margin: 10px 0;
+}
+.comprar input{
+    width: 20px;
+    height: 20px;
+}
+.divisor {
+    background-color: #0e0e1d;
+    margin: 20px 10px;
+}
+.div-cards-produtos {
+    display: flex;
+    padding: 10px; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.divs-dupla {
+    display: flex;
+}
+.title-pedidos h1 {
+    margin-left: 15px;
+    align-self: center;
+    margin-bottom: 0;
+    font-size: 35px;
+}
+.title-pedidos {
+    display: flex;
+    margin-bottom: 10px;
+    color: #0e0e1d;
+    padding: 10px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.sair-pedido {
+    border-radius: 50px;
+    background-color: #c59c53;
+    color: #0e0e1d;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 180px;
+    text-align: center;
+    border: none;
+    box-shadow: 2px 2px 6px #555;
+}
+.enviar-pedido {
+    border-radius: 50px;
+    background-color: #c59c53;
+    color: #0e0e1d;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 180px;
+    text-align: center;
+    border: none;
+    box-shadow: 2px 2px 6px #555;
+}
+.div-sair {
+    align-self: center;
+    text-align: right;
+    padding-right: 0;
+}
+.div-enviar {
+    align-self: center;
+    text-align: right;
+    padding-right: 0;
+}
+.btn-enviar {
+    margin: 20px 15px
+}
+.title-catalogo h1 {
+    display: block;
+    margin-left: 15px;
+    align-self: center;
+    margin-bottom: 0;
+    font-size: 35px;
+    color: #0e0e1d;
+}
+.title-catalogo {
+    margin: 20px auto;
+    justify-content: center;
+    text-align: center;
+}
+.selecao {
+    display: flex;
+    align-self: center;
+    padding: 10px 40px;
+}
+.selecao h4 {
+    font-size: 22px;
+    font-family: system-ui;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 0;
+    align-self: center;
+}
+.selecao input {
+    align-self: center;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/*RESPONSIVO*/
+
+@media (max-width: 992px) {
+    .title-pedidos h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img-bemvindo img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 520px) {
+    .sair-pedido {
+        width: 120px;
+    }
+}
+
+@media (max-width: 442px) {
+    .qtd-produtos {
+        margin: 20px 0;
+    }
+    .qtd-produtos h4 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .img-bemvindo img {
+        width: 130px;
+    }
+    .sair-pedido {
+        padding: 7px 20px;
+        width: 100px;
+    }
+    .title-catalogo h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 330px){
+.sair-pedido {
+    padding: 5px 20px;
+    width: 85px;
+}
+.title-catalogo h1 {
+    font-size: 24px;
+    margin: 0 auto;
+}
+}
+
+/* @media (max-width: 863px) {
+    .title-desktop {
+        display: none;
+    }
+    .title-mobile {
+        display: block;
+        margin: 0 auto;
+    }
+    .title-mobile h1 {
+        display: block;
+        margin-left: 15px;
+        align-self: center;
+        margin-bottom: 0;
+        font-size: 35px;
+        color: #0e0e1d;
+    }
+} */

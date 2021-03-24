@@ -1,0 +1,714 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+<div class="fundo-prod">
+
+    <div class="filtros-produtos">
+        <div class="div-buscar row col-sm-12">
+            <form class="col-xl-6 col-lg-5 col-md-5 col-sm-12 navbar-form navbar-left navbar-buscar" role="search">
+                <div class="form-group form-buscar">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <button type="submit" class="btn-buscar">
+                    <span class="material-icons">search</span>
+                </button>
+            </form>
+
+            <div class="col-xl-6 row col-lg-7 col-md-7 col-sm-12 btns-filtros">
+
+                <div class="col-lg-3 col-md-4 col-sm-4 btn-catalogo categ">
+                    <button class="btn btn-lg btn-categorias" (click)="open(content)">Categorias</button>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-4 btn-catalogo gerar">
+                    <button (click)="abrircatalogo(abrir)" class="dropbtn">Gerar Catálogo</button>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-4 btn-catalogo finalizar">
+                    <button routerLink="/finalizar-compra" class="btn btn-lg btn-categorias">Finalizar Compra</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <mat-divider class="divisor"></mat-divider>
+
+    <mat-card-content class="produtos-scroll">
+        <div class="col-md-12 div-products">
+            <div class="div-cards-produtos">
+                <div class="col-lg col-md-6 col-sm-12" style="padding: 10px;">
+                    <mat-card class="mat-elevation-z4 card-produtos">
+
+                        <img src="assets/img/roupa1.jpg">
+
+                        <div class="title-product">
+                            <h3>Macacão Feminino</h3>
+                        </div>
+
+                        <div class="div-cor-qtd">
+                            <div class="cor">
+                                <h4>Cor</h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: green;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: palevioletred;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: blueviolet;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: black;">
+                                </h4>
+                            </div>
+                            <div class="qtd-produtos">
+                                <h4>Qtd</h4>
+
+                                <div style="display: flex;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            cursor: pointer;
+                                            padding: 0px !important;
+                                            border-top-left-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            width: 50px;
+                                            height: 30px;
+                                            background-color: #a98748;" (click)="Diminuirquantidade()">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">remove</i></button>
+
+                                    <input class="col-sm text-center"
+                                        style="border: 1px solid #a98748; padding: 0px !important; width: 40px; height: 30px;"  [(ngModel)]="quant">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            width: 50px !important;
+                                            height: 30px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: #a98748;" (click)="addquantidade()">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">add</i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="div-valor">
+                            <div class="valor">
+                                <h4>R$ 89,90</h4>
+                            </div>
+                            <div class="comprar">
+                                <button routerLink="/carrinho" class="btn-comprar" mat-raised-button>COMPRAR</button>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+
+                <div class="col-lg col-md-6 col-sm-12" style="padding: 10px;">
+                    <mat-card class="mat-elevation-z4 card-produtos">
+
+                        <img src="assets/img/roupa1.jpg">
+
+                        <div class="title-product">
+                            <h3>Macacão Feminino</h3>
+                        </div>
+
+                        <div class="div-cor-qtd">
+                            <div class="cor">
+                                <h4>Cor</h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: green;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: palevioletred;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: blueviolet;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: black;">
+                                </h4>
+                            </div>
+
+                            <div class="qtd-produtos">
+                                <h4>Qtd</h4>
+
+                                <div style="display: flex;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            cursor: pointer;
+                                            padding: 0px !important;
+                                            border-top-left-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            width: 50px;
+                                            height: 30px;
+                                            background-color: #a98748;" (click)="Diminuirquantidade()">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">remove</i></button>
+
+                                    <input class="col-sm text-center"
+                                        style="border: 1px solid #a98748; padding: 0px !important; width: 40px; height: 30px;" [(ngModel)]="quant">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            width: 50px !important;
+                                            height: 30px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: #a98748;" (click)="addquantidade()">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">add</i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="div-valor">
+                            <div class="valor">
+                                <h4>R$ 89,90</h4>
+                            </div>
+                            <div class="comprar">
+                                <button routerLink="/carrinho" class="btn-comprar" mat-raised-button>COMPRAR</button>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+
+                <div class="col-lg col-md-6 col-sm-12" style="padding: 10px;">
+                    <mat-card class="mat-elevation-z4 card-produtos">
+
+                        <img src="assets/img/roupa1.jpg">
+
+                        <div class="title-product">
+                            <h3>Macacão Feminino</h3>
+                        </div>
+
+                        <div class="div-cor-qtd">
+                            <div class="cor">
+                                <h4>Cor</h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: green;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: palevioletred;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: blueviolet;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: black;">
+                                </h4>
+
+                            </div>
+                            <div class="qtd-produtos">
+                                <h4>Qtd</h4>
+
+                                <div style="display: flex;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            cursor: pointer;
+                                            padding: 0px !important;
+                                            border-top-left-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            width: 50px;
+                                            height: 30px;
+                                            background-color: #a98748;" (click)="Diminuirquantidade()">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">remove</i></button>
+
+                                    <input class="col-sm text-center"
+                                        style="border: 1px solid #a98748; padding: 0px !important; width: 40px; height: 30px;" [(ngModel)]="quant">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            width: 50px !important;
+                                            height: 30px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: #a98748;" (click)="addquantidade()">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">add</i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="div-valor">
+                            <div class="valor">
+                                <h4>R$ 89,90</h4>
+                            </div>
+                            <div class="comprar">
+                                <button routerLink="/carrinho" class="btn-comprar" mat-raised-button>COMPRAR</button>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+
+                <div class="col-lg col-md-6 col-sm-12" style="padding: 10px;">
+                    <mat-card class="mat-elevation-z4 card-produtos">
+
+                        <img src="assets/img/roupa1.jpg">
+
+                        <div class="title-product">
+                            <h3>Macacão Feminino</h3>
+                        </div>
+
+                        <div class="div-cor-qtd">
+                            <div class="cor">
+                                <h4>Cor</h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: green;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: palevioletred;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: blueviolet;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: black;">
+                                </h4>
+                            </div>
+                            <div class="qtd-produtos">
+                                <h4>Qtd</h4>
+
+                                <div style="display: flex;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            cursor: pointer;
+                                            padding: 0px !important;
+                                            border-top-left-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            width: 50px;
+                                            height: 30px;
+                                            background-color: #a98748;" (click)="Diminuirquantidade()">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;" >remove</i></button>
+
+                                    <input class="col-sm text-center"
+                                        style="border: 1px solid #a98748; padding: 0px !important; width: 40px; height: 30px;" [(ngModel)]="quant">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            width: 50px !important;
+                                            height: 30px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: #a98748;" (click)="addquantidade()">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">add</i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="div-valor">
+                            <div class="valor">
+                                <h4>R$ 89,90</h4>
+                            </div>
+                            <div class="comprar">
+                                <button routerLink="/carrinho" class="btn-comprar" mat-raised-button>COMPRAR</button>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+            </div>
+
+            <div class="div-cards-produtos">
+                <div class="col-lg col-md-6 col-sm-12" style="padding: 10px;">
+                    <mat-card class="mat-elevation-z4 card-produtos">
+
+                        <img src="assets/img/roupa1.jpg">
+
+                        <div class="title-product">
+                            <h3>Macacão Feminino</h3>
+                        </div>
+
+                        <div class="div-cor-qtd">
+                            <div class="cor">
+                                <h4>Cor</h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: green;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: palevioletred;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: blueviolet;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: black;">
+                                </h4>
+                            </div>
+                            <div class="qtd-produtos">
+                                <h4>Qtd</h4>
+
+                                <div style="display: flex;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            cursor: pointer;
+                                            padding: 0px !important;
+                                            border-top-left-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            width: 50px;
+                                            height: 30px;
+                                            background-color: #a98748;">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">remove</i></button>
+
+                                    <input class="col-sm text-center"
+                                        style="border: 1px solid #a98748; padding: 0px !important; width: 40px; height: 30px;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            width: 50px !important;
+                                            height: 30px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: #a98748;">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">add</i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="div-valor">
+                            <div class="valor">
+                                <h4>R$ 89,90</h4>
+                            </div>
+                            <div class="comprar">
+                                <button routerLink="/carrinho" class="btn-comprar" mat-raised-button>COMPRAR</button>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+
+                <div class="col-lg col-md-6 col-sm-12" style="padding: 10px;">
+                    <mat-card class="mat-elevation-z4 card-produtos">
+
+                        <img src="assets/img/roupa1.jpg">
+
+                        <div class="title-product">
+                            <h3>Macacão Feminino</h3>
+                        </div>
+
+                        <div class="div-cor-qtd">
+                            <div class="cor">
+                                <h4>Cor</h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: green;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: palevioletred;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: blueviolet;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: black;">
+                                </h4>
+                            </div>
+
+                            <div class="qtd-produtos">
+                                <h4>Qtd</h4>
+
+                                <div style="display: flex;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            cursor: pointer;
+                                            padding: 0px !important;
+                                            border-top-left-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            width: 50px;
+                                            height: 30px;
+                                            background-color: #a98748;">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">remove</i></button>
+
+                                    <input class="col-sm text-center"
+                                        style="border: 1px solid #a98748; padding: 0px !important; width: 40px; height: 30px;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            width: 50px !important;
+                                            height: 30px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: #a98748;">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">add</i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="div-valor">
+                            <div class="valor">
+                                <h4>R$ 89,90</h4>
+                            </div>
+                            <div class="comprar">
+                                <button routerLink="/carrinho" class="btn-comprar" mat-raised-button>COMPRAR</button>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+
+                <div class="col-lg col-md-6 col-sm-12" style="padding: 10px;">
+                    <mat-card class="mat-elevation-z4 card-produtos">
+
+                        <img src="assets/img/roupa1.jpg">
+
+                        <div class="title-product">
+                            <h3>Macacão Feminino</h3>
+                        </div>
+
+                        <div class="div-cor-qtd">
+                            <div class="cor">
+                                <h4>Cor</h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: green;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: palevioletred;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: blueviolet;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: black;">
+                                </h4>
+
+                            </div>
+                            <div class="qtd-produtos">
+                                <h4>Qtd</h4>
+
+                                <div style="display: flex;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            cursor: pointer;
+                                            padding: 0px !important;
+                                            border-top-left-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            width: 50px;
+                                            height: 30px;
+                                            background-color: #a98748;">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">remove</i></button>
+
+                                    <input class="col-sm text-center"
+                                        style="border: 1px solid #a98748; padding: 0px !important; width: 40px; height: 30px;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            width: 50px !important;
+                                            height: 30px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: #a98748;">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">add</i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="div-valor">
+                            <div class="valor">
+                                <h4>R$ 89,90</h4>
+                            </div>
+                            <div class="comprar">
+                                <button routerLink="/carrinho" class="btn-comprar" mat-raised-button>COMPRAR</button>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+
+                <div class="col-lg col-md-6 col-sm-12" style="padding: 10px;">
+                    <mat-card class="mat-elevation-z4 card-produtos">
+
+                        <img src="assets/img/roupa1.jpg">
+
+                        <div class="title-product">
+                            <h3>Macacão Feminino</h3>
+                        </div>
+
+                        <div class="div-cor-qtd">
+                            <div class="cor">
+                                <h4>Cor</h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: green;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: palevioletred;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: blueviolet;">
+                                </h4>
+                                <h4
+                                    style="width: 20px; height: 20px; border: 1px solid #000; border-radius: 50%; margin: 5px; background-color: black;">
+                                </h4>
+                            </div>
+                            <div class="qtd-produtos">
+                                <h4>Qtd</h4>
+
+                                <div style="display: flex;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            cursor: pointer;
+                                            padding: 0px !important;
+                                            border-top-left-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            width: 50px;
+                                            height: 30px;
+                                            background-color: #a98748;">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">remove</i></button>
+
+                                    <input class="col-sm text-center"
+                                        style="border: 1px solid #a98748; padding: 0px !important; width: 40px; height: 30px;">
+
+                                    <button class="col-sm" style="border: 1px solid #a98748; cursor: pointer; padding: 0px !important;
+                                            width: 50px !important;
+                                            height: 30px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            background-color: #a98748;">
+                                        <i class="material-icons cadastro-icons"
+                                            style="line-height: 1.5; font-size: 20px; color: #fff;">add</i></button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="div-valor">
+                            <div class="valor">
+                                <h4>R$ 89,90</h4>
+                            </div>
+                            <div class="comprar">
+                                <button routerLink="/carrinho" class="btn-comprar" mat-raised-button>COMPRAR</button>
+                            </div>
+                        </div>
+
+                    </mat-card>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--MODAL FILTROS-->
+
+
+        <ng-template #content let-c="close" let-d="dismiss">
+
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">CATEGORIAS</h4>
+                <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p>Filtros</p>
+
+                <div style="display: block;">
+
+                    <mat-form-field appearance="outline" style="display: block;">
+                        <mat-label style="color: #0e0e1d;">Tamanho</mat-label>
+                        <mat-select>
+                            <mat-option>Nenhum</mat-option>
+                            <mat-option *ngFor="let size of size" [value]="size">{{size}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" style="display: block;">
+                        <mat-label style="color: #0e0e1d;">Gênero</mat-label>
+                        <mat-select>
+                            <mat-option>Nenhum</mat-option>
+                            <mat-option *ngFor="let genre of genre" [value]="genre">{{genre}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" style="display: block;">
+                        <mat-label style="color: #0e0e1d;">Idade</mat-label>
+                        <mat-select>
+                            <mat-option>Nenhum</mat-option>
+                            <mat-option *ngFor="let age of age" [value]="age">{{age}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" style="display: block;">
+                        <mat-label style="color: #0e0e1d;">Roupas</mat-label>
+                        <mat-select>
+                            <mat-option>Nenhum</mat-option>
+                            <mat-option *ngFor="let clothes of clothes" [value]="clothes">{{clothes}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Filtrar</button>
+            </div>
+        </ng-template>
+
+        <!--MODAL GERAR CATALOGO-->
+
+        <ng-template #abrir let-c="close" let-d="dismiss">
+
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title" style="margin-bottom: 0;
+                font-size: 24px; font-family: system-ui; font-weight: 500;">GERAR CATÁLOGO</h4>
+                <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+    
+            <div class="modal-body">
+                <h2 style="font-size: 18px; font-family: system-ui;">Link de Acesso para o Catálogo</h2>
+                <a href="http://localhost:4200/catalogo" target="_blank">http://localhost:4200/catalogo</a>
+                
+            </div>
+    
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" (click)="c('Save click')" style="background-color: #0e0e1d; color: #d8bd6c; font-size: 18px; border: none;">COPIAR LINK</button>
+                <button type="button" class="btn btn-outline-dark" (click)="c('Save click')" style="background-color: #0e0e1d; color: #d8bd6c; font-size: 18px; border: none;">CANCELAR</button>
+            </div>
+        </ng-template>
+
+    </mat-card-content>
+
+
+</div>

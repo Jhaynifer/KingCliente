@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<div class="div-fundo">
+    <mat-card class="div-card-dash mat-elevation-z4">
+
+        <div class="img-bemvindo">
+            <img src="assets/img/logo.png">
+        </div>
+
+        <div class="row title-dash">
+            <h1>Bem vindo ao Sistema King!</h1>
+        </div>
+
+    </mat-card>
+    <div class="col-md-12 div-cards">
+
+        <mat-card routerLink="/pedidos" class="col-md cards-dash mat-elevation-z4">
+            <div class="title-cards">
+                <span class="material-icons icones-dash">
+                    shopping_cart
+                </span>
+                <h1>Meus Pedidos</h1>
+
+            </div>
+        </mat-card>
+        <mat-card routerLink="/produtos" class="col-md cards-dash mat-elevation-z4">
+            <div class="title-cards">
+                <span class="material-icons icones-dash">
+                    storefront
+                </span>
+                <h1>Produtos</h1>
+
+            </div>
+        </mat-card>
+        <mat-card routerLink="/financeiro" class="col-md cards-dash mat-elevation-z4">
+            <div class="title-cards">
+                <span class="material-icons icones-dash">
+                    monetization_on
+                </span>
+                <h1>Financeiro</h1>
+            </div>
+        </mat-card>
+    </div>
+
+    <div class="col-md-12 div-cards">
+        <mat-card routerLink="/financeiro"  class="col-md cards-dash mat-elevation-z4">
+            <div class="title-credito">
+                <h1>Crédito Disponível</h1>
+            </div>
+            <div class="valor-credito" style="text-align: center;">
+                <h1>R$ 1.000,00</h1><br>
+                
+            </div>
+        </mat-card>
+        <mat-card routerLink="/compra"  class="col-md cards-dash mat-elevation-z4">
+            <div class="title-cards">
+                <span class="material-icons icones-dash">
+                    local_mall
+                    </span>
+                
+                <div class="botao-compra valor-credito" style="margin: 20px 0;">
+                    <button>COMPRAR CRÉDITO</button>
+                </div>
+            </div>
+        </mat-card>
+
+
+    </div>
+
+
+</div>

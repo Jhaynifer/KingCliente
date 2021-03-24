@@ -1,0 +1,253 @@
+.form-group input {
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+.div-buscar {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.add-pedido {
+    text-align: right;
+}
+.btn-add-pedido {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0e0e1d;
+    color: #d8bd6c;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 2px 3px #666;
+}
+.btn-buscar {
+    background-color: #0e0e1d;
+    color: #d8bd6c;
+    border-radius: 50px;
+    padding: 0 20px;
+    border: none;
+    height: 38px;
+    margin-left: -65px;
+    padding-top: 5px;
+}
+.icon-store {
+    cursor: pointer;
+}
+.icon-pedido {
+    font-size: 45px;
+    border: 1px solid #0e0e1d;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 10px;
+}
+.title-pedidos h1 {
+    margin-left: 15px;
+    align-self: center;
+    margin-bottom: 0;
+    font-size: 35px;
+}
+.title-pedidos {
+    display: flex;
+    margin-bottom: 20px;
+}
+.itens-pedidos {
+    display: flex;
+}
+.btn-pedidos {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 100px;
+    border: 3px solid #b48d4b;
+    background-color: #fff;
+    font-size: 16px;
+    color: #0e0e1d;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+}
+.btn-pedidos span {
+    color: #a58143;
+    align-self: center;
+    font-size: 35px;
+}
+.div-btns-pedidos {
+    align-self: center;
+}
+.div-pedidos-list {
+    justify-content: space-between;
+    display: flex; 
+    margin: 20px 10px; 
+    border-radius: 10px;
+    border: 2px solid #bd944d;
+    border-left-width: 15px;
+}
+.titles h1{
+    font-family: system-ui, sans-serif;
+    font-weight: 500;
+    color: #0e0e1d;
+}
+.titles {
+    margin: 10px;
+    align-self: center;
+    margin-bottom: 0;
+}
+.titles h3 {
+    color: #b3833e;
+    font-weight: 500;
+}
+
+/* CARD MOBILE PEDIDOS*/
+.card-mobile-pedidos {
+    margin-bottom: 75px; 
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+.card-mobile {
+    border-radius: 10px;
+    border: 2px solid #bd944d;
+    border-left-width: 15px;
+}
+.card-title-mobile {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.icon-mobile-pedido {
+    display: flex;
+    align-self: center;
+}
+.icon-mobile-pedido span {
+    font-size: 45px;
+    border: 1px solid #0e0e1d;
+    border-radius: 50%;
+    padding: 10px;
+}
+.icon-mobile-pedido h1 {
+    margin-bottom: 0;
+    align-self: center;
+    margin-left: 10px;
+    font-size: 28px;
+}
+.numero-pedido {
+    align-self: center;
+}
+.numero-pedido h2 {
+    margin-bottom: 0;
+    align-self: center;
+    font-size: 26px;
+}
+.div-info-mobile {
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.btns-mobile {
+    display: flex;
+}
+.card-mobile-pedidos {
+    display: none;
+}
+.icone-add {
+    font-size: 18px; 
+    margin-right: 10px; 
+    vertical-align: middle;
+}
+.add-pedido-mobile {
+    display: none;
+}
+
+/* FIM CARD MOBILE PEDIDOS*/
+
+@media (max-width: 1200px) {
+    .lista-pedidos {
+        display: none;
+    }
+    .card-mobile-pedidos {
+        display: block;
+    }
+    .card-mobile {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .title-add {
+        display: none;
+    }
+    .icone-add {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 585px) {
+    .add-pedido-mobile {
+        display: block;
+        text-align: right;
+        align-self: center;
+    }
+    .add-pedido {
+        display: none;
+    }
+    .card-title {
+        justify-content: space-between;
+        display: flex;
+    }
+    .title-pedidos {
+        margin-bottom: 0px;
+        padding: 0;
+        align-self: center;
+    }
+    .navbar-left {
+        padding: 0;
+    }
+    .buscar-pedidos {
+        width: 100%;
+    }
+    .form-group input {
+        width: 100%;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .card-mobile {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .icon-mobile-pedido span {
+        font-size: 30px;
+    }
+    .icon-mobile-pedido h1 {
+        font-size: 25px;
+    }
+    .numero-pedido h2 {
+        font-size: 24px;
+    }
+    .text-info-mobile h1 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .text-info-mobile h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .btns-mobile {
+        margin: 0 auto;
+    }
+    .btn-pedidos {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 410px) {
+    .title-pedidos h1 {
+        margin-left: 10px;
+        font-size: 28px;
+    }
+    .icon-pedido {
+        font-size: 25px;
+    }
+}

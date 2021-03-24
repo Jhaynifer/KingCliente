@@ -1,0 +1,36 @@
+<mat-toolbar class="header mat-elevation-z4">
+    <div class="div-header">
+        <div class="logo-king">
+            <div class="col-md-1 icone-hamburguer-container" >
+                <mat-icon id="header-hamburguer-icone">
+                    menu
+                </mat-icon>
+            </div>
+            <span>
+                <a>
+                    <img routerLink="/dashboard" class="logo-header" src="assets/img/logo.png" alt="logo">
+                </a>
+            </span>
+        </div>
+
+        <div class="usuario-logado">
+            <div class="dropdown">
+                <img class="img-drop" src="assets/img/profile.png">
+
+                <div class="dropdown-content">
+                    <div routerLink="/perfil" class="desc">Perfil</div>
+                    <div routerLink="/login" class="desc">Sair</div>
+                </div>
+            </div>
+
+            <div routerLink="/pedidos" class="icon-store">
+                <span class="material-icons">
+                    local_grocery_store
+                </span>
+            </div>
+        </div>
+
+
+
+    </div>
+</mat-toolbar>

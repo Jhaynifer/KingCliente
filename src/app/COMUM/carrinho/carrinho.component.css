@@ -1,0 +1,166 @@
+.card-title {
+    display: flex;
+}
+.title-carrinho h1 {
+    margin-left: 15px;
+    align-self: center;
+    margin-bottom: 0;
+    font-size: 35px;
+}
+.title-carrinho {
+    display: flex;
+    margin-bottom: 20px;
+}
+.icon-carrinho {
+    font-size: 45px;
+    border: 1px solid #0e0e1d;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 10px;
+}
+.form-group input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 16px;
+}
+.form-group {
+    width: 100%;
+}
+.div-buscar {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-buscar {
+    background-color: #0e0e1d;
+    color: #d8bd6c;
+    border-radius: 50px;
+    padding: 0 20px;
+    border: none;
+    height: 38px;
+    margin-left: -65px;
+    padding-top: 5px;
+}
+.btn-voltar {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0e0e1d;
+    color: #d8bd6c;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 2px 3px #666;
+}
+.voltar {
+    text-align: right;
+}
+.buscar-carrinho {
+    width: 100%;
+}
+.line-carrinho {
+    display: flex;
+}
+.btn-remove button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0e0e1d;
+    color: #d8bd6c;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 2px 3px #666;
+}
+.card-carrinho {
+    margin: 20px 10px;
+    border-radius: 10px;
+    border: 2px solid #bd944d;
+    border-left-width: 15px;
+}
+.image img {
+    border-radius: 10px;
+}
+.btns-finalizar button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0e0e1d;
+    color: #d8bd6c;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 2px 3px #666;
+    margin: 20px 10px;
+}
+
+.infos-card {
+    display: flex;
+}
+
+.infos-card-mobile {
+    display: block;
+}
+.image img {
+    width: 70%; 
+    align-self: center;
+}
+.itens-mobile {
+    display: none;
+}
+
+@media (max-width: 925px) {
+    .name h2, h3 {
+        font-size: 16px;
+    }
+    .btn-remove button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .image img {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 685px) {
+    .itens {
+        display: none;
+    }
+    .itens-mobile{
+        display: block;
+    }
+    .image img {
+        padding: 0; 
+        width: 75%;
+    }
+    .image {
+        padding: 0;
+    }
+   
+    .infos-card-mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .name {
+        padding: 0;
+        display: flex;
+    }
+    .name h3 {
+        padding-left: 10px;
+    }
+    .name h2 {
+        align-self: center;
+        margin-bottom: 0;
+    }
+    .card-carrinho {
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .infos-card-mobile {
+        margin-left: -10px;
+    }
+}

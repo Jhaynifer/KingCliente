@@ -1,0 +1,261 @@
+.div-fundo {
+    display: flex; 
+    height: 100%; 
+    width: 100%; 
+    background-color: #0e0e1d;
+    padding: 0;
+}
+
+.voltar {
+    display: flex;
+    align-self: center;
+    width: 90px;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.icon-voltar {
+    font-size: 25px;
+    align-self: center;
+}
+.text-voltar {
+    font-size: 16px; 
+    margin-left: 10px;
+    align-self: center;
+}
+.div-img {
+    background-color: #0e0e1d; 
+    width: 100%;
+    align-self: center;
+    vertical-align: middle;
+    height: 60%;
+}
+.div-login {
+    width: 100%; 
+    height: 100%; 
+    background-color: #0e0e1d;
+    padding: 0;
+}
+.card-login {
+    text-align: center; 
+    align-self: center; 
+    box-shadow: none;
+    background-color: #0e0e1d;
+}
+.div-info-logo {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    align-self: center;
+    padding-top: 20px;
+}
+.div-info-logo img {
+    width: 230px;
+}
+.logo-login {
+    margin: 0 auto;
+}
+.div-info-logo h3 {
+    color: #fff;
+    font-size: 26px;
+    line-height: 1.5;
+    letter-spacing: 2;
+    padding: 15px;
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+}
+.div-sociais {
+    width: 100%;
+    margin: 0 auto;
+}
+.siga-nos {
+    text-align: center; 
+    margin-top: 40px;
+}
+.siga-nos h3 {
+    color: #fff; 
+    font-size: 22px; 
+    font-weight: 300;
+}
+.img-sociais {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.img-sociais img {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+.footer-login {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.footer-login h3 {
+    line-height: 5;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 30px;
+}
+.text-login {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.div-nome {
+    width: 100%; 
+    text-align: center; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.btn-cadastrar {
+    padding: 10px;
+    margin-top: 20px !important;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    color: #0e0e1d;
+    background: #cca658;
+    display: block;
+    width: 250px;
+    box-shadow: 2px 2px 3px #090912;
+    cursor: pointer;
+    font-weight: 500;
+}
+.div-form-cadastro {
+    display: flex; 
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.line-responsive {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form-login{
+    width: 100%;
+    display: block;
+    align-self: center;
+    padding-left: 0;
+}
+.form-dupla {
+    width: 100%;
+    padding-left: 10px;
+}
+.div-form-scroll {
+    display: block;
+    overflow-y: auto;
+}
+.div-botoes {
+    width: 100%; 
+    text-align: center; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.text-senha {
+    align-self: center; 
+    padding: 0;
+}
+.text-senha h1 {
+    color: #fff; 
+    font-size: 32px; 
+    text-align: left; 
+    padding: 0;
+}
+
+
+
+@media (max-width: 990px) {
+    .div-img {
+        width: 80%;
+    }
+    .logo-login {
+        width: 60%;
+    }
+    .div-info-logo h3 {
+        font-size: 22px;
+    }
+    .siga-nos h3 {
+        font-size: 18px;
+    }
+    .footer-login h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-dupla {
+        padding-left: 0px; 
+    }
+    .form-login {
+        padding-right: 0;
+    }
+    .form-senha {
+        margin-top: 15px;
+    }
+    .text-senha h1 {
+
+        font-size: 26px; 
+    }
+}
+
+@media (max-width: 610px) {
+    .btn-cadastrar {
+        width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .div-form-cadastro {
+        display: block !important;
+    }
+    .form-dupla {
+        margin: 0;
+    }
+    .div-form-scroll {
+        height: 450px;
+    }
+}
+
+@media (max-width: 435px) {
+    .div-form-scroll {
+        padding: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .btn-cadastrar {
+        font-size: 14px;
+    }
+    .text-senha h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 390px) {
+    .btn-cadastrar {
+        width: 110px;
+    }
+    .footer-login h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 370px) {
+    .btn-cadastrar {
+        font-size: 12px;
+        width: 40%;
+    }
+}

@@ -1,0 +1,224 @@
+.div-fundo {
+    height: 100%; 
+    width: 100%; 
+    background-color: #0e0e1d;
+    padding: 0;
+}
+.voltar {
+    display: flex;
+    align-self: center;
+    width: 115px;
+    border: 1px solid #F2E6A7;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    color: #F2E6A7;
+    cursor: pointer;
+}
+.div-top {
+    padding-top: 15px;
+}
+.icon-voltar {
+    font-size: 35px;
+    align-self: center;
+}
+.text-voltar {
+    font-size: 20px; 
+    margin-left: 10px;
+    align-self: center;
+}
+.div-login {
+    width: 100%; 
+    padding: 0;
+
+}
+.card-login {
+    text-align: center; 
+    align-self: center; 
+    box-shadow: none;
+    background-color: #0e0e1d;
+}
+.div-info-logo {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    align-self: center;
+}
+.logo-login {
+    margin: 0 auto;
+    width: 15%;
+    margin-top: 20px;
+}
+.div-info-logo h3 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 2;
+    padding: 15px;
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.div-email {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+.div-sociais {
+    width: 100%;
+    margin: 0 auto;
+}
+.siga-nos {
+    text-align: center; 
+    margin-top: 10px;
+}
+.siga-nos h3 {
+    color: #fff; 
+    font-size: 22px; 
+    font-weight: 300;
+}
+.img-sociais {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.img-sociais img {
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+.footer-login {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #0e0e1d;
+    padding: 0;
+}
+.footer-login h3 {
+    line-height: 5;
+    font-size: 20px;
+    font-weight: 300;
+}
+.btn-entrar {
+    padding: 10px; 
+    margin-bottom: 20px !important; 
+    font-size: 16px; 
+    border-radius: 10px; 
+    border: none; 
+    color:#0e0e1d; 
+    background:#cca658; 
+    display: block; 
+    margin: 0 auto;
+    width: 10%;
+    box-shadow: 2px 2px 3px #090912;
+    cursor: pointer;
+    font-weight: 500;
+    width: 150px;
+}
+.div-form-login {
+    width: 60%; 
+    text-align: center; 
+    margin: 0 auto;
+}
+.div-voltar {
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1230px) {
+    .div-email {
+        width: 50%;
+    }
+    .div-voltar {
+        width: 53%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo-login {
+        width: 25%;
+    }
+}
+
+@media (max-width: 850px) {
+    .logo-login {
+        width: 30%;
+    }
+    .div-info-logo h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 839px) {
+    .div-email {
+        width: 75%;
+    }
+    .div-voltar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-login {
+        width: 35%;
+    }
+    .div-info-logo h3 {
+        font-size: 22px;
+    }
+    
+}
+
+@media (max-width: 510px) {
+    .div-email {
+        width: 85%;
+    }
+    .div-voltar {
+        width: 91%;
+    }
+    .btn-entrar {
+        width: 100px;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo-login {
+        width: 45%;
+    }
+    .div-info-logo h3 {
+        font-size: 18px;
+    }
+    .siga-nos h3 {
+        font-size: 18px;
+    }
+    .footer-login h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 365px) {
+    .div-email {
+        width: 95%;
+    }
+    .div-voltar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 330px) {
+    .div-info-logo h3 {
+        font-size: 16px;
+    }
+    .logo-login {
+        width: 50%;
+    }
+    .siga-nos h3 {
+        font-size: 16px;
+    }
+    .footer-login h3 {
+        font-size: 14px;
+    }
+
+}
